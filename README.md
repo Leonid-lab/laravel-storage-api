@@ -1,3 +1,33 @@
+# Cloud Storage API
+
+## Postman
+
+See the postman collection [here](https://github.com/Leonid-lab/laravel-storage-api/blob/master/New%20Collection.postman_collection.json).
+
+
+## How to start the service locally
+
+
+```sh
+git clone https://github.com/Leonid-lab/laravel-storage-api
+cd Cloud-Storage-API
+
+cp .env.example .env
+
+# https://laravel.com/docs/9.x/sail#installing-composer-dependencies-for-existing-projects
+docker run --rm \
+    -u "$(id -u):$(id -g)" \
+    -v $(pwd):/var/www/html \
+    -w /var/www/html \
+    laravelsail/php81-composer:latest \
+    composer install --ignore-platform-reqs
+
+./vendor/bin/sail up -d
+
+./vendor/bin/sail artisan key:generate
+./vendor/bin/sail artisan migrate:fresh
+```
+
 
 ## API Routes
 
@@ -60,10 +90,4 @@ Supported attributes:
 ### User information
 
 + `/api/user/info` - `GET` - get basic information about current user.
-
-
-
-
-
-
 
