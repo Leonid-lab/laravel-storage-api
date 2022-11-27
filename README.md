@@ -3,7 +3,7 @@
 
 ### Authentication
 
-+ `/api/auth/register` - `GET` - user registers on platform and gets token for using storage.
++ `/api/auth/register` - `POST` - user registers on platform and gets token for using storage.
 
 Supported attributes:
 
@@ -13,7 +13,7 @@ Supported attributes:
 | `email`              | string | Yes       | 
 | `password`              | string | Yes       | 
 
-+ `/api/auth/login` - `GET` - user logs in on platform and gets token for using storage.
++ `/api/auth/login` - `POST` - user loginning
 
 Supported attributes:
 
@@ -23,9 +23,9 @@ Supported attributes:
 | `password`              | string | Yes       | 
 
 
-+ `/api/auth/logout` - `GET` - user logs in on platform and gets token for using storage.
++ `/api/auth/logout` - `GET` - user logout
 
-### Working with storage
+### Storage
 
 You may add name of directory in {dirname} field to manage file located in this directory. 
 
