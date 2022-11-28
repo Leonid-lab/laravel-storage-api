@@ -10,7 +10,7 @@ See the postman collection [here](https://github.com/Leonid-lab/laravel-storage-
 
 ```sh
 git clone https://github.com/Leonid-lab/laravel-storage-api
-cd Cloud-Storage-API
+cd laravel-storage-api
 
 cp .env.example .env
 
