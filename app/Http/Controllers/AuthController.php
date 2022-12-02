@@ -7,7 +7,6 @@ use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Hash;
 
-
 class AuthController extends Controller
 {
     /**
@@ -86,11 +85,7 @@ class AuthController extends Controller
     public function logout(Request $request)
 	{
 		
-		Auth::logout();
-
-		$request->session()->invalidate();
-
-		$request->session()->regenerateToken();
+		auth()->user()->tokens()->delete();
 
         return [
             'message' => 'You\'ve logged out'
