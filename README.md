@@ -1,5 +1,7 @@
 # Cloud Storage API
 
+## Demo ip : 188.68.220.78
+
 ## Postman
 
 See the postman collection [here](https://github.com/Leonid-lab/laravel-storage-api/blob/master/New%20Collection.postman_collection.json).
