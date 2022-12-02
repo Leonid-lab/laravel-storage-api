@@ -28,7 +28,7 @@ docker run --rm \
 ./vendor/bin/sail artisan migrate:fresh
 ```
 #If you have issues with the permissions, then you can try the next solutions:
-
+```sh
 1. With user root:root . You try with command :
 
 sudo chmod -R 777 storage/
@@ -44,7 +44,7 @@ sudo chmod -R 755 storage/
 sudo chown -R nginx:nginx storage/
 
 sudo chmod -R 755 storage/
-
+```
 ## API Routes
 
 ### Authentication
