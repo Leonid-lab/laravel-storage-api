@@ -45,6 +45,8 @@ sudo chown -R nginx:nginx storage/
 
 sudo chmod -R 755 storage/
 ```
+Also if there're some problems with migration, you can set DB_HOST=mysql in .env file
+
 ## API Routes
 
 ### Authentication
