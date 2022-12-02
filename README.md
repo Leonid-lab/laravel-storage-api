@@ -71,6 +71,9 @@ Supported attributes:
 
 + `/api/file/{dirname?}/{name}` - `GET` - get file with specified name.
 + `/api/file/{dirname?}/{name}` - `PUT` - rename file with specified name.
+| Attribute                | Type     | Required |
+|:-------------------------|:---------|:---------|
+| `newName`                   | string     | Yes      | 
 + `/api/file/{dirname?}/{name}` - `POST` - delete file with specified name.
 + `/api/file/publish/{dirname?}/{name}` - `POST` - publish file with specified name and get public link on file which can be used instead of attribute `name` in `GET` method of file.
 + `/file/list` - `GET` - get list of all files contained in user storage.
