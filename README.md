@@ -29,20 +29,22 @@ docker run --rm \
 ./vendor/bin/sail artisan key:generate
 ./vendor/bin/sail artisan migrate:fresh
 ```
-#If you have issues with the permissions, then you can try the next solutions:
-```sh
+## If you have issues with the permissions, then you can try the next solutions:
 1. With user root:root . You try with command :
+```sh
 
 sudo chmod -R 777 storage/
+```
 
 2. With user www-data:www-data . You try with command :
-
+```sh
 sudo chown -R www-data:www-data storage/
 
 sudo chmod -R 755 storage/
+```
 
 3.If you use Docker . You try with command :
-
+```sh
 sudo chown -R nginx:nginx storage/
 
 sudo chmod -R 755 storage/
